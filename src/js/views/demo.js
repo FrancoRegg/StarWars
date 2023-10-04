@@ -12,13 +12,14 @@ import Planets from "../component/planets.jsx";
 export const Demo = () => {
   const { store, actions } = useContext(Context);
 
-  
+
 
   return (
     <div className="container">
 
       < People />
-      
+      < Planets />
+      < Vehicle />
 
       <Link to="/">
         <button className="btn btn-primary">Back home</button>

@@ -60,7 +60,7 @@ const getState = ({ getStore, getActions, setStore }) => {
       },
 
       fetchVehicles: () => {
-        fetch("https://www.swapi.tech/api/starships")
+        fetch("https://www.swapi.tech/api/vehicles")
           .then(resp => resp.json())
           .then(data => setStore({ vehicles: data.results }))
           .catch(err => console.log("No se encontro la informacion", err))
