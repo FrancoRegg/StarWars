@@ -10,11 +10,11 @@ const Planets = () => {
 
       {store.planets.map((value, index) => {
         return (
-          <div className="card" key={index} style={{ "width": "18rem" }}>
+          <div className="card planets" key={index} style={{ "width": "18rem" }}>
             <img src={`https://starwars-visualguide.com/assets/img/planets/${value.uid}.jpg`}
               onError={({ currentTarget }) => {
                 currentTarget.onerror = null; // prevents looping
-                currentTarget.src = "https://starwars-visualguide.com/assets/img/placeholder.jpg";
+                currentTarget.src = "https://static.wikia.nocookie.net/esstarwars/images/b/b0/Tatooine_TPM.png/revision/latest?cb=20131214162357";
               }}
               className="card-img-top" alt="..." />
             <div className="card-body">

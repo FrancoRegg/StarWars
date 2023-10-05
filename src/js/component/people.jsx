@@ -10,7 +10,7 @@ const People = () => {
       {store.people.map((value, index) => {
         return (
 
-          <div className="card" key={index} style={{ "width": "18rem" }}>
+          <div className="card people" key={index} style={{ "width": "18rem" }}>
             <img src={`https://starwars-visualguide.com/assets/img/characters/${value.uid}.jpg`}
               onError={({ currentTarget }) => {
                 currentTarget.onerror = null; // prevents looping

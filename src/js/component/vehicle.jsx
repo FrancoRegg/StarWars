@@ -10,7 +10,7 @@ const Vehicle = () => {
     <div className="row">
       {store.vehicles.map((value, index) => {
         return (
-          <div className="card" key={index} style={{ "width": "18rem" }}>
+          <div className="card vehicle" key={index} style={{ "width": "18rem" }}>
             <img src={`https://starwars-visualguide.com/assets/img/vehicles/${value.uid}.jpg`}
               onError={({ currentTarget }) => {
                 currentTarget.onerror = null; // prevents looping
