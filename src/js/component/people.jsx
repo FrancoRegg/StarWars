@@ -1,11 +1,9 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { Context } from "../store/appContext";
+import { Link } from "react-router-dom";
 
 const People = () => {
-
   const { store } = useContext(Context);
-  console.log("AQUI", store);
-
   return (
     <div className="row">
 
@@ -21,8 +19,9 @@ const People = () => {
               className="card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title">{value.name}</h5>
-
-              <a href="#" className="btn btn-primary">Read More...</a>
+              <Link to={`/infoPeople/${value.uid}`}>
+                <span className="btn btn-primary">Read More...</span>
+              </Link>
             </div>
           </div>)
       })}

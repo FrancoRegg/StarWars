@@ -1,11 +1,10 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
+import { Link } from "react-router-dom";
 
 const Planets = () => {
 
   const { store } = useContext(Context)
-  console.log("AQUI PLANETS", store);
-
   return (
     <div className="row">
 
@@ -21,7 +20,10 @@ const Planets = () => {
             <div className="card-body">
               <h5 className="card-title">{value.name}</h5>
 
-              <a href="#" className="btn btn-primary">Read More...</a>
+              <Link to={`/infoPlanet/${value.uid}`}>
+                <span className="btn btn-primary">Read More...</span>
+              </Link>
+
             </div>
           </div>)
       })}

@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
+import { Link } from "react-router-dom";
 
 const Vehicle = () => {
 
@@ -19,7 +20,9 @@ const Vehicle = () => {
             <div className="card-body">
               <h5 className="card-title">{value.name}</h5>
 
-              <a href="#" className="btn btn-primary">Read More...</a>
+              <Link to={`/infoVehicle/${value.uid}`}>
+                <span className="btn btn-primary">Read More...</span>
+              </Link>
             </div>
           </div>)
       })}
