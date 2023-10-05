@@ -2,8 +2,11 @@ import React from "react";
 
 import "../../styles/home.css";
 
-export const Home = () => (
-	<div className="container text-center mt-5">
+export const Home = () => {}
+	
+
+
+/*<div className="container text-center mt-5">
 		<div className="people">
       <h1>Peolpe</h1>
       <div className="imgPeople">
@@ -22,5 +25,4 @@ export const Home = () => (
         <img src="https://poptv.orange.es/wp-content/uploads/sites/3/2023/05/naves-star-wars-day-03-1024x576.jpg" alt="" className="image vehicle"/>
       </div>
     </div>
-	</div>
-);
+	</div>*/

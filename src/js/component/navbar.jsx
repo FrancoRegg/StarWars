@@ -12,13 +12,13 @@ export const Navbar = () => {
         <Link to="/demo"></Link>
       </div>
       <div className="cTitulos">
-        <Link to="/">
+        <Link to="/peoples">
           <span className="title">CHARACTERS</span>
         </Link>
-        <Link>
+        <Link to="/planets">
           <span className="title">PLANETS</span>
         </Link>
-        <Link>
+        <Link to="/vehicles">
           <span className="title">VEHICLES</span>
         </Link>
       </div>
