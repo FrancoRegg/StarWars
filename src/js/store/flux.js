@@ -66,7 +66,21 @@ const getState = ({ getStore, getActions, setStore }) => {
           .catch(err => console.log("No se encontro la informacion", err))
       },
 
+      getFavorite: (add) => {
+        const store = getStore();
 
+        if (!store.favorites.includes(add)) {
+          setStore({ favorites: [...store.favorites, add] })
+        }
+      },
+
+      deleteFavorite: (add) => {
+        const store = getStore();
+        const favorite = store.favorites.filter(favorite => favorite !== add);
+        setStore({ favorites: favorite });
+
+
+      }
     }
   };
 };

@@ -26,7 +26,7 @@ export const Navbar = () => {
             <Link to="/vehicles">
               <span className="title">VEHICLES</span>
             </Link>
-            <Link to="">
+            <Link to="/favorites">
               <span className="title">FAVORITE</span>
             </Link>
           </div>

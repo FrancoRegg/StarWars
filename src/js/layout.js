@@ -12,10 +12,10 @@ import { Footer } from "./component/footer.jsx";
 import InfoPeople from "./component/infoPeople.jsx";
 import InfoPlanet from "./component/infoPlanet.jsx";
 import InfoVehicle from "./component/infoVehicle.jsx";
-import DemoPeople from "./views/demoPeople.js";
 import People from "./component/people.jsx";
 import Planets from "./component/planets.jsx";
 import Vehicle from "./component/vehicle.jsx";
+import Favorite from "./component/favorite.jsx";
 
 //create your first component
 const Layout = () => {
@@ -34,6 +34,7 @@ const Layout = () => {
 						<Route path="/peoples" element={<People />} />
 						<Route path="/planets" element={<Planets />} />
 						<Route path="/vehicles" element={<Vehicle/>} />
+						<Route path="/favorites" element={<Favorite/>} />
 						<Route path="/infoplanet/:uid" element={<InfoPlanet />} />
 						<Route path="/infovehicle/:uid" element={<InfoVehicle />} />
 						<Route path="/infopeople/:uid" element={<InfoPeople />} />

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Planets = () => {
 
-  const { store } = useContext(Context)
+  const { store,action } = useContext(Context)
   return (
     <div className="row">
 
@@ -19,11 +19,14 @@ const Planets = () => {
               className="card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title">{value.name}</h5>
-
-              <Link to={`/infoPlanet/${value.uid}`}>
-                <span className="btn btn-primary">Read More...</span>
-              </Link>
-
+              <div className="btn-read">
+                <Link to={`/infoPlanet/${value.uid}`}>
+                  <span className="btn btn-primary">Read More...</span>
+                </Link>
+              </div>
+              <div className="container-add">
+                <button className="" onClick={() => action.getFavorite(value.name)} ><i class="fas fa-star"></i></button>
+              </div>
             </div>
           </div>)
       })}
