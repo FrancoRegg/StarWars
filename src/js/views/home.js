@@ -4,10 +4,10 @@ import "../../styles/home.css";
 
 export const Home = () => {
   return (
-    <div id="carouselExampleAutoplaying" className="carouselcon slide" data-bs-ride="carousel">
+    <div id="carouselExampleAutoplaying" className="container carousel slide" data-bs-ride="carousel">
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo4PVNYlEf5TUx1cc12STYmXoE6OYqQkR3Ug&usqp=CAU" className="d-block w-100" alt="..." />
+          <img src="..." className="img-fluid d-block w-100" alt="..." />
         </div>
         <div className="carousel-item">
           <img src="..." className="d-block w-100" alt="..." />

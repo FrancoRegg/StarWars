@@ -17,18 +17,10 @@ export const Navbar = () => {
             <Link to="/demo"></Link>
           </div>
           <div className="Titulos">
-            <Link to="/peoples">
-              <span className="title">CHARACTERS</span>
-            </Link>
-            <Link to="/planets">
-              <span className="title">PLANETS</span>
-            </Link>
-            <Link to="/vehicles">
-              <span className="title">VEHICLES</span>
-            </Link>
-            <Link to="/favorites">
-              <span className="title">FAVORITE</span>
-            </Link>
+            <Link to="/peoples" className="title">CHARACTERS</Link>
+            <Link to="/planets" className="title">PLANETS</Link>
+            <Link to="/vehicles" className="title">VEHICLES</Link>
+            <Link to="/favorites" className="title">FAVORITE</Link>
           </div>
           <div className="favorite"></div>
         </div>

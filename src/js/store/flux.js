@@ -46,21 +46,21 @@ const getState = ({ getStore, getActions, setStore }) => {
       },*/
 
       fetchPeople: () => {
-        fetch("https://www.swapi.tech/api/people")
+        fetch("https://www.swapi.tech/api/people?page=2&limit=82")
           .then(resp => resp.json())
           .then(data => setStore({ people: data.results }))
           .catch(err => console.log("No se encontro la informacion", err))
       },
 
       fetchPlanets: () => {
-        fetch("https://www.swapi.tech/api/planets")
+        fetch("https://www.swapi.tech/api/planets?page=2&limit=")
           .then(resp => resp.json())
           .then(data => setStore({ planets: data.results }))
           .catch(err => console.log("No se encontro la informacion", err))
       },
 
       fetchVehicles: () => {
-        fetch("https://www.swapi.tech/api/vehicles")
+        fetch("https://www.swapi.tech/api/vehicles?page=2&limit=")
           .then(resp => resp.json())
           .then(data => setStore({ vehicles: data.results }))
           .catch(err => console.log("No se encontro la informacion", err))
