@@ -17,7 +17,7 @@ const InfoVehicle = () => {
       <div>
         <h1 className="text-black"></h1>
         <div> foto
-          <img alt="" />
+          <img src={`https://starwars-visualguide.com/assets/img/vehicles/${params.uid}.jpg`} />
         </div>
         <div>nombre {infoVehicle == "" ? "Espere..." : infoVehicle.properties.name}</div>
         <div className="properties">
