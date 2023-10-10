@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Planets = () => {
 
-  const { store,action } = useContext(Context)
+  const { store,actions } = useContext(Context)
   return (
     <div className="row">
 
@@ -16,7 +16,7 @@ const Planets = () => {
                 currentTarget.onerror = null; // prevents looping
                 currentTarget.src = "https://static.wikia.nocookie.net/esstarwars/images/b/b0/Tatooine_TPM.png/revision/latest?cb=20131214162357";
               }}
-              className="card-img-top" alt="..." />
+              className="card-image" alt="..." />
             <div className="card-body">
               <h5 className="card-title">{value.name}</h5>
               <div className="btn-read">
@@ -25,7 +25,7 @@ const Planets = () => {
                 </Link>
               </div>
               <div className="container-add">
-                <button className="" onClick={() => action.getFavorite(value.name)} ><i class="fas fa-star"></i></button>
+                <button className=""  onClick={() => actions.setFavorite(value.name)} ><i class="fas fa-star"></i></button>
               </div>
             </div>
           </div>)

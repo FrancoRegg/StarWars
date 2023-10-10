@@ -15,7 +15,7 @@ const InfoPeople = () => {
 
   return (
     <>
-      <div>
+      <div className="containerInfo">
         <h1 className="text-black"></h1>
         <div> foto
           <img src={`https://starwars-visualguide.com/assets/img/characters/${params.uid}.jpg`} />

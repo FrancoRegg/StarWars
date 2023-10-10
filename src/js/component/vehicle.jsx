@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Vehicle = () => {
 
-  const { store,action } = useContext(Context)
+  const { store,actions } = useContext(Context)
 
   return (
     <div className="row">
@@ -16,7 +16,7 @@ const Vehicle = () => {
                 currentTarget.onerror = null; // prevents looping
                 currentTarget.src = "https://starwars-visualguide.com/assets/img/placeholder.jpg";
               }}
-              className="card-img-top" alt="..." />
+              className="card-image" alt="..." />
             <div className="card-body">
               <h5 className="card-title">{value.name}</h5>
               <div className="btn-read">
@@ -25,7 +25,7 @@ const Vehicle = () => {
               </Link>
               </div>
               <div className="container-add">
-                <button className="" onClick={() => action.getFavorite(value.name)} ><i class="fas fa-star"></i></button>
+                <button className="" onClick={() => actions.setFavorite(value.name)} ><i class="fas fa-star"></i></button>
               </div>
             </div>
           </div>)
