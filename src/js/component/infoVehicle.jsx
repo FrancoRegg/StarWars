@@ -8,9 +8,9 @@ const InfoVehicle = () => {
   useEffect(() => {
     fetch(`https://www.swapi.tech/api/vehicles/${params.uid}`)
       .then(resp => resp.json())
-      .then(data => setInfoVehicle(data.result.properties))
+      .then(data => console.log(data))
       .catch(err => err)
-  }, [])
+    }, [])
 
   return (
     <>
@@ -19,13 +19,13 @@ const InfoVehicle = () => {
         <div> foto
           <img src={`https://starwars-visualguide.com/assets/img/vehicles/${params.uid}.jpg`} />
         </div>
-        <div>Name: {infoVehicle == "" ? "Loading..." : infoVehicle.name}</div>
+        <div>Name: {infoVehicle == "" ? "Loading..." : infoVehicle.properties.name}</div>
         <div className="properties">
           <ul className="list-group list-group-flush">
-            <li className="list-group-item">Model: {infoVehicle == "" ? "" : infoVehicle.model}</li>
-            <li className="list-group-item">Starship Class: {infoVehicle == "" ? "" : infoVehicle.starship_class}</li>
-            <li className="list-group-item">Length: {infoVehicle == "" ? "" : infoVehicle.length}</li>
-            <li className="list-group-item">Passengers: {infoVehicle == "" ? "" : infoVehicle.passengers}</li>
+            <li className="list-group-item">Model: {infoVehicle == "" ? "Loading..." : infoVehicle.properties.model}</li>
+            <li className="list-group-item">Starship Class: {infoVehicle == "" ? "Loading..." : infoVehicle.properties.starship_class}</li>
+            <li className="list-group-item">Length: {infoVehicle == "" ? "Loading..." : infoVehicle.properties.length}</li>
+            <li className="list-group-item">Passengers: {infoVehicle == "" ? "Loading..." : infoVehicle.properties.passengers}</li>
           </ul>
         </div>
       </div>

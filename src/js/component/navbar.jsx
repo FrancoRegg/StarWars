@@ -40,12 +40,14 @@ export const Navbar = () => {
             <Link to="/vehicles"><span className="title btn ">Vehicles</span></Link>
             <Link to="/favorites"><span className="title btn ">Favorites</span></Link>
           </div>
-          <div className="favorite"></div>
+          
         </div>
       </div>
     </nav>
   )
 }
+
+
 //<div className="navbar-brand h1 text-center">StarWars</div>
 //<button className="btn ">Check the Context in action</button>
 

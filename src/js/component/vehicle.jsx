@@ -25,7 +25,7 @@ const Vehicle = () => {
               </Link>
               </div>
               <div className="container-add">
-                <button className="" onClick={() => actions.setFavorite(value.name)} ><i class="fas fa-star"></i></button>
+                <button className="" onClick={() => actions.getFavorite(value.name)} ><i class="fas fa-star"></i></button>
               </div>
             </div>
           </div>)

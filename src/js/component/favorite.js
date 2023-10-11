@@ -3,6 +3,7 @@ import { Context } from "../store/appContext";
 
 
 const Favorite = () => {
+  
   const { store } = useContext(Context)
   return (
     <div className="row">

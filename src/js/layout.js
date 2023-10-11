@@ -15,7 +15,7 @@ import InfoVehicle from "./component/infoVehicle.jsx";
 import People from "./component/people.jsx";
 import Planets from "./component/planets.jsx";
 import Vehicle from "./component/vehicle.jsx";
-import Favorite from "./component/favorite.jsx";
+import Favorite from "./component/favorite.js";
 
 //create your first component
 const Layout = () => {
