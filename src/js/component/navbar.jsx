@@ -34,7 +34,7 @@ export const Navbar = () => {
           <div className="ml-auto">
             <Link to="/demo"></Link>
           </div>
-          <div className="Titulos">
+          <div className="Titulos ">
             <Link to="/peoples"><span className="title btn ">Characters</span></Link>
             <Link to="/planets"><span className="title btn ">Planets</span></Link>
             <Link to="/vehicles"><span className="title btn ">Vehicles</span></Link>

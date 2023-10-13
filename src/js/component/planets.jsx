@@ -18,14 +18,12 @@ const Planets = () => {
               }}
               className="card-image" alt="..." />
             <div className="card-body">
-              <h5 className="card-title">{value.name}</h5>
-              <div className="btn-read">
+              <h4 className="card-title">{value.name}</h4>
+              <div className="read">
                 <Link to={`/infoPlanet/${value.uid}`}>
-                  <span className="btn btn-primary">Read More...</span>
+                  <button className="btnread">Read More</button>
                 </Link>
-              </div>
-              <div className="container-add">
-                <button className=""  onClick={() => actions.getFavorite(value.name)} ><i class="fas fa-star"></i></button>
+                <button className="fav"  onClick={() => actions.getFavorite(value.name)} ><i class="fas fa-star"></i></button>
               </div>
             </div>
           </div>)
