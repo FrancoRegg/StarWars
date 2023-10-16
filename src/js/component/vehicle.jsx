@@ -23,7 +23,7 @@ const Vehicle = () => {
               <Link to={`/infoVehicle/${value.uid}`}>
                 <button className="btnread">Read More</button>
               </Link>
-                <button className="fav" onClick={() => actions.getFavorite(value.name)} ><i class="fas fa-star"></i></button>
+                <button className="fav" onClick={() => actions.getFavorite(value)} ><i class="fas fa-star"></i></button>
               </div>
             </div>
           </div>)

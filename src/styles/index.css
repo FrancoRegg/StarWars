@@ -83,7 +83,6 @@ h4{
   align-items: center;
   margin: 1em 2em 4em;
 }
-
 .read{
   display: flex;
   justify-content: space-between;
@@ -118,4 +117,27 @@ h4{
 .navbar-toggler-icon{
   background-color: rgb(57, 57, 57);
 }
-
+.name-info{
+  color: rgb(48, 48, 45);
+  margin: .2rem;
+  -webkit-text-stroke: .3px white;
+  font-weight: 200;
+  font-size: 3rem;
+}
+.Info{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+.properties{
+  width: 100%;
+  background-color: transparent;
+  text-align: justify;
+}
+.list-group-item{
+  background-color: transparent;
+  font-size: 1.5rem;
+  -webkit-text-stroke: .3px rgb(248, 237, 118);
+  color: black;
+  font-weight: 300;
+}

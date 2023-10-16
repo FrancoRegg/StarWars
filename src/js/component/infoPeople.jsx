@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-
 const InfoPeople = () => {
   const [infoPeople, setInfoPeople] = useState ("")
   const params = useParams();
@@ -15,20 +14,21 @@ const InfoPeople = () => {
 
   return (
     <>
-      <div className="containerInfo">
-        <h1 className="text-black"></h1>
-        <div> foto
-          <img src={`https://starwars-visualguide.com/assets/img/characters/${params.uid}.jpg`} />
+      <div className="container-fluid Info">
+        <div className="image">
+          <img src={`https://starwars-visualguide.com/assets/img/characters/${params.uid}.jpg`} className="card-image" />
         </div>
-        <div>Name: {infoPeople == "" ? "Loading..." : infoPeople.properties.name} </div>
-        <div className="properties">
-          <ul className="list-group list-group-flush">
-            <li className="list-group-item">Height: {infoPeople == "" ? "" : infoPeople.properties.height}  </li>
-            <li className="list-group-item">Mass: {infoPeople == "" ? "" : infoPeople.properties.mass} </li>
-            <li className="list-group-item">Hair Color: {infoPeople == "" ? "" : infoPeople.properties.hair_color} </li>
-            <li className="list-group-item">Eye Color: {infoPeople == "" ? "" : infoPeople.properties.eye_color} </li>
-            <li className="list-group-item">identification: {infoPeople == "" ? "" : infoPeople._id} </li>
-          </ul>
+        <div className="specific-information">
+          <div className="name-info"> {infoPeople == "" ? "Loading..." : infoPeople.properties.name}</div>
+          <div className="properties">
+            <ul className="list-group list-group-flush">
+              <li className="list-group-item">Height: {infoPeople == "" ? "" : infoPeople.properties.height}  </li>
+              <li className="list-group-item">Mass: {infoPeople == "" ? "" : infoPeople.properties.mass} </li>
+              <li className="list-group-item">Hair Color: {infoPeople == "" ? "" : infoPeople.properties.hair_color} </li>
+              <li className="list-group-item">Eye Color: {infoPeople == "" ? "" : infoPeople.properties.eye_color} </li>
+              <li className="list-group-item">Identification: {infoPeople == "" ? "" : infoPeople._id} </li>
+            </ul>
+          </div>  
         </div>
       </div>
     </>

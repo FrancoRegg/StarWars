@@ -5,8 +5,6 @@ import { Context } from "../store/appContext";
 
 export const Navbar = () => {
 
-  const{actions, store} = useContext(Context)
-
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container">

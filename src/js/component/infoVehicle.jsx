@@ -8,25 +8,26 @@ const InfoVehicle = () => {
   useEffect(() => {
     fetch(`https://www.swapi.tech/api/vehicles/${params.uid}`)
       .then(resp => resp.json())
-      .then(data => console.log(data))
+      .then(data => setInfoVehicle(data.result))
       .catch(err => err)
-    }, [])
+  }, [])
 
   return (
     <>
-      <div className="containerInfo">
-        <h1 className="text-black"></h1>
-        <div> foto
-          <img src={`https://starwars-visualguide.com/assets/img/vehicles/${params.uid}.jpg`} />
+      <div className="container-fluid Info">
+        <div className="image">
+          <img src={`https://starwars-visualguide.com/assets/img/vehicles/${params.uid}.jpg`} className="card-image" />
         </div>
-        <div>Name: {infoVehicle == "" ? "Loading..." : infoVehicle.properties.name}</div>
-        <div className="properties">
-          <ul className="list-group list-group-flush">
-            <li className="list-group-item">Model: {infoVehicle == "" ? "Loading..." : infoVehicle.properties.model}</li>
-            <li className="list-group-item">Starship Class: {infoVehicle == "" ? "Loading..." : infoVehicle.properties.starship_class}</li>
-            <li className="list-group-item">Length: {infoVehicle == "" ? "Loading..." : infoVehicle.properties.length}</li>
-            <li className="list-group-item">Passengers: {infoVehicle == "" ? "Loading..." : infoVehicle.properties.passengers}</li>
-          </ul>
+        <div className="specific-information">
+          <div className="name-info">{infoVehicle == "" ? "Loading..." : infoVehicle.properties.name}</div>
+          <div className="properties">
+            <ul className="list-group list-group-flush">
+              <li className="list-group-item">Model: {infoVehicle == "" ? "Loading..." : infoVehicle.properties.model}</li>
+              <li className="list-group-item">Starship Class: {infoVehicle == "" ? "Loading..." : infoVehicle.properties.starship_class}</li>
+              <li className="list-group-item">Length: {infoVehicle == "" ? "Loading..." : infoVehicle.properties.length}</li>
+              <li className="list-group-item">Passengers: {infoVehicle == "" ? "Loading..." : infoVehicle.properties.passengers}</li>
+            </ul>
+          </div>
         </div>
       </div>
     </>

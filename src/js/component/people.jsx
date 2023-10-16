@@ -1,9 +1,6 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
-import Favorite from "./favorite";
-
-
 
 const People = () => {
   const { store, actions } = useContext(Context);
@@ -25,7 +22,7 @@ const People = () => {
                 <Link to={`/infoPeople/${value.uid}`}>
                   <button className="btnread">Read More</button>
                 </Link>
-                <button className="fav" onClick={() => actions.getFavorite()} ><i class="fas fa-star"></i></button>
+                <button className="fav" onClick={() => actions.getFavorite(value)} ><i class="fas fa-star"></i></button>
               </div>
             </div>
           </div>)
