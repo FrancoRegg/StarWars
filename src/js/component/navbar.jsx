@@ -3,8 +3,13 @@ import { Link } from "react-router-dom";
 import "../../styles/navbar.css";
 import { Context } from "../store/appContext";
 
+
 export const Navbar = () => {
+ const {store} = useContext(Context);
+
   return (
+    <>
+    
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container">
         <div className="contnav collapse navbar-collapse" id="navbarSupportedContent">
@@ -20,10 +25,11 @@ export const Navbar = () => {
             <Link to="/vehicles"><span className="title btn ">Vehicles</span></Link>
             <Link to="/favorites"><span className="title btn ">Favorites</span></Link>
           </div>
-          
         </div>
       </div>
     </nav>
+    
+    </>
   )
 }
 
