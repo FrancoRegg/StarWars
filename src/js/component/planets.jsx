@@ -9,9 +9,10 @@ const Planets = () => {
     <div className="row">
 
       {store.planets.map((value, index) => {
+        console.log("AQUI VALUE", value);
         return (
           <div className="card planets" key={index} style={{ "width": "18rem" }}>
-            <img src={`https://starwars-visualguide.com/assets/img/planets/${value.uid}.jpg`}
+             <img src={`https://starwars-visualguide.com/assets/img/planets/${value.uid}.jpg`}
               onError={({ currentTarget }) => {
                 currentTarget.onerror = null; // prevents looping
                 currentTarget.src = "https://static.wikia.nocookie.net/esstarwars/images/b/b0/Tatooine_TPM.png/revision/latest?cb=20131214162357";
@@ -33,3 +34,4 @@ const Planets = () => {
 }
 
 export default Planets;
+

@@ -8,6 +8,8 @@
 }
 body {
   background-image: url(https://static.videezy.com/system/resources/thumbnails/000/042/456/original/Sky-night-rotation-space-background.jpg);
+  display: grid;
+  min-height: 100vh;
 }
 .contnav {
   display: flex;
@@ -27,11 +29,11 @@ body {
   }
 
 .title {
-  margin: 0 1rem 0 auto;
+  margin: 0 1.5rem 0 auto;
   color: white;
   font-weight: 600;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   border-radius: 100vmax;
   border: 2px solid rgb(180, 178, 178);
   padding: 0.7rem;
@@ -140,4 +142,27 @@ h4{
   -webkit-text-stroke: .3px rgb(248, 237, 118);
   color: black;
   font-weight: 300;
+}
+footer{
+  background-color: black;
+  color: white;
+  font-size: .8rem;
+  
+}
+.TitulosFooter{
+  padding: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titleFoo{
+  margin: 0 1rem 0 auto;
+  font-size: 1.1em;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+}
+.titleFoo:hover{
+  text-shadow: 0 0 1rem rgb(158, 158, 100);
+  color: white;
 }

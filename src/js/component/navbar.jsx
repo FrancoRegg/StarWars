@@ -4,13 +4,9 @@ import "../../styles/navbar.css";
 import { Context } from "../store/appContext";
 
 export const Navbar = () => {
-
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container">
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <div className="navbar-toggler-icon"></div>
-        </button>
         <div className="contnav collapse navbar-collapse" id="navbarSupportedContent">
           <Link to="/">
             <img className="imgNav" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSquUoilY01uGHYZ7mRlJRqhcRQ5qJVOnIM0A&usqp=CAU" alt="" />
