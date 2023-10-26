@@ -6,9 +6,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  height: 100vh;
+}
 body {
   background-image: url(https://static.videezy.com/system/resources/thumbnails/000/042/456/original/Sky-night-rotation-space-background.jpg);
-  display: grid;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
 }
 .contnav {
@@ -147,6 +151,7 @@ footer{
   background-color: black;
   color: white;
   font-size: .8rem;
+  margin-top: auto;
 }
 .TitulosFooter{
   padding: 0.3rem;
@@ -164,4 +169,14 @@ footer{
 .titleFoo:hover{
   text-shadow: 0 0 1rem rgb(158, 158, 100);
   color: white;
+}
+.delete{
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  color: rgb(190, 104, 104);
+  transform: scale(1.1);
+  cursor: pointer;
 }

@@ -33,7 +33,7 @@ const getState = ({ getStore, getActions, setStore }) => {
       fetchPlanets: () => {
         fetch("https://www.swapi.tech/api/planets?page=2&limit=")
           .then(resp => resp.json())
-          .then(data => setStore({ planets: data.results }))
+          .then(data => setStore({planets: data.results}))
           .catch(err => console.log("No se encontro la informacion", err))
       },
 //Vehicle

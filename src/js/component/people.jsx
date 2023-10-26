@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 
 const People = () => {
   const { store, actions } = useContext(Context);
-  
+
   return (
     <div className="row">
       {store.people.map((value, index) => {
-        console.log("AQUI VALUE", value);
+
         return (
           <div className="card people" key={index} style={{ "width": "18rem" }}>
             <img src={`https://starwars-visualguide.com/assets/img/characters/${value.uid}.jpg`}
@@ -28,14 +28,9 @@ const People = () => {
             </div>
           </div>)
       })}
-
     </div>
   )
-
 };
-
-
-
 export default People
 
 //{`https://starwars-visualguide.com/assets/img/characters/${value.uid}/jpg`}
