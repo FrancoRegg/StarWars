@@ -171,12 +171,14 @@ footer{
   color: white;
 }
 .delete{
-  border: 1px solid white;
+  width: auto;
   display: flex;
+  font-size: 25px;
   justify-content: center;
-  margin: 0;
-  padding: 0;
   color: rgb(190, 104, 104);
-  transform: scale(1.1);
+  transition: 0.2s;
   cursor: pointer;
+}
+.delete:hover{
+  transform: scale(1.1);
 }
