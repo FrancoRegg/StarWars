@@ -21,7 +21,7 @@ const Favorite = () => {
             <div className="card-body">
               <h4 className="card-title">{fav.name}</h4>
             </div>
-            <div className="delete" onClick={() => actions.deleteFavorite(fav)}><i class="fa fa-trash"></i></div>
+            <div className="delete"><i class="fa fa-trash" onClick={() => actions.deleteFavorite(fav)}></i></div>
           </div>
         )
       })}
