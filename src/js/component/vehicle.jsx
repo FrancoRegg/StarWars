@@ -9,7 +9,7 @@ const Vehicle = () => {
   return (
     <div className="row">
       {store.vehicles.map((value, index) => {
-        
+        value["type"]="vehicles"
         return (
           <div className="card vehicle" key={index} style={{ "width": "18rem" }}>
             <img src={`https://starwars-visualguide.com/assets/img/vehicles/${value.uid}.jpg`}

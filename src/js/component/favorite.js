@@ -10,9 +10,10 @@ const Favorite = () => {
   return (
     <div className="row">
       {store.favorites.map((fav, index) => {
+        console.log("-----",fav);
         return (
           <div className="card favorite" key={index} style={{ "width": "18rem" }}>
-            <img src={`https://starwars-visualguide.com/assets/img/vehicles/${fav.uid}.jpg`}
+            <img src={`https://starwars-visualguide.com/assets/img/${fav.type}/${fav.uid}.jpg`}
               onError={({ currentTarget }) => {
                 currentTarget.onerror = null; // prevents looping
                 currentTarget.src = "https://starwars-visualguide.com/assets/img/placeholder.jpg";

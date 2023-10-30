@@ -8,7 +8,7 @@ const People = () => {
   return (
     <div className="row">
       {store.people.map((value, index) => {
-
+        value["type"]="characters"
         return (
           <div className="card people" key={index} style={{ "width": "18rem" }}>
             <img src={`https://starwars-visualguide.com/assets/img/characters/${value.uid}.jpg`}
@@ -32,5 +32,3 @@ const People = () => {
   )
 };
 export default People
-
-//{`https://starwars-visualguide.com/assets/img/characters/${value.uid}/jpg`}
