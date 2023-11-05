@@ -1,5 +1,7 @@
 import React from "react";
-
+import logo from '/workspaces/StarWars-React/src/img/logo.jpg'
+import personajes from '/workspaces/StarWars-React/src/img/personajes.png'
+import nave from '/workspaces/StarWars-React/src/img/nave.png'
 import "../../styles/home.css";
 
 export const Home = () => {
@@ -7,16 +9,13 @@ export const Home = () => {
     <div id="carouselExampleAutoplaying" className="container carousel slide" data-bs-ride="carousel">
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img src="src/img/logo.jpg" className="img-fluid d-block w-100" alt="logo" />
+          <img src={logo} className="img-fluid d-block w-100" alt="logo" />
         </div>
         <div className="carousel-item">
-          <img src="/img/personajes.png" className="img-fluid d-block w-100" alt="personajes" />
+          <img src={personajes} className="img-fluid d-block w-100" alt="personajes" />
         </div>
         <div className="carousel-item">
-          <img src="/img/robot.png" className="img-fuid d-block w-100" alt="robots" />
-        </div>
-        <div className="carousel-item">
-          <img src="/img/nave.png" className="img-fluid d-block w-100" alt="nave" />
+          <img src={nave} className="img-fluid d-block w-100" alt="nave" />
         </div>
       </div>
       <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
