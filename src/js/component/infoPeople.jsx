@@ -36,33 +36,3 @@ const InfoPeople = () => {
 }
 
 export default InfoPeople
-
-//src={`https://starwars-visualguide.com/assets/img/characters/${value.uid}.jpg`}
-//{infoPeople == "" ? "Espere..." : infoPeople.properties.name}
-
-/*useEffect(() => {
-  fetch(`https://www.swapi.tech/api/people/${params.uid}`)
-    .then(resp => resp.json())
-    .then(data => setInfoPeople(data.result))
-    .catch(err => err)
-}, [])^*/
-
-
-/*
-useEffect(()=>{
-    const fetchData = async () => {
-      try {
-        const response = await fetch(`https://www.swapi.tech/api/people/${params.uid}`);
-        const data = await response.json();
-        setInfoPeople(data.result);
-      }
-      catch (error) {
-        console.error(error);
-    }
-  };
-  fetchData();
-  },[params.uid])
-
-*/ 
-
-//  const [infoPeople, setInfoPeople] = useState(null)

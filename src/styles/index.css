@@ -121,7 +121,7 @@ h4{
   background-color: rgb(162, 162, 162);
 }
 .navbar-toggler-icon{
-  background-color: rgb(57, 57, 57);
+  background-color: transparent;
 }
 .name-info{
   color: rgb(48, 48, 45);
@@ -181,4 +181,7 @@ footer{
 }
 .delete:hover{
   transform: scale(1.1);
+}
+.carousel-inner{
+  margin: 3em auto 4em;
 }
