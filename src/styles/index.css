@@ -198,5 +198,5 @@ footer{
 }
 .carousel-inner{
   margin: 3em auto 4em;
-  transition-duration: 300ms;
+  transition-duration: 100ms;
 }
