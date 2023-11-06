@@ -3,11 +3,10 @@ import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 
 const Planets = () => {
-
   const { store,actions } = useContext(Context)
+  
   return (
     <div className="row">
-
       {store.planets.map((value, index) => {
         value["type"]="planets"
         return (

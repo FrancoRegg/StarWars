@@ -3,7 +3,6 @@ import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 
 const Vehicle = () => {
-
   const { store,actions } = useContext(Context)
 
   return (

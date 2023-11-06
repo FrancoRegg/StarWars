@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import logo from '/workspaces/StarWars-React/src/img/logo.jpg'
 import personajes from '/workspaces/StarWars-React/src/img/personajes.png'
@@ -9,9 +9,10 @@ import sound from '/workspaces/StarWars-React/src/assets/sound/starwras-guerra-d
 
 
 export const Home = () => {
-  
+
 
   return (
+    
     <div id="carouselExampleAutoplaying" className="container carousel slide" data-bs-ride="carousel">
       <div className="carousel-inner">
         <div className="carousel-item active">
@@ -32,7 +33,7 @@ export const Home = () => {
         <span className="carousel-control-next-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Next</span>
       </button>
-      <ReactHowler src={sound}/>
+      <ReactHowler src={sound} />
     </div>
   )
 }
