@@ -30,6 +30,7 @@ body {
   margin: .5rem;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   }
 
 .title {
@@ -48,6 +49,11 @@ body {
   box-shadow: 0 0 1rem rgba(255, 255, 255, .20);
   text-align: center;
   transition: 0.2s;
+}
+@media (max-width: 320px) {
+  .title {
+    width: 100%; /* Cambia el ancho a 100% para que se coloquen dos elementos por fila */
+  }
 }
 .row{
   display: flex;
@@ -118,10 +124,17 @@ h4{
   font-size: 1.3rem;
 }
 .navbar-toggler{
-  background-color: rgb(162, 162, 162);
+  background-color: white;
 }
 .navbar-toggler-icon{
-  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.fa fa-bars{
+  font-size: small;
 }
 .name-info{
   color: rgb(48, 48, 45);
@@ -133,6 +146,7 @@ h4{
 .Info{
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   padding: 2rem;
 }
 .properties{
@@ -184,4 +198,5 @@ footer{
 }
 .carousel-inner{
   margin: 3em auto 4em;
+  transition-duration: 300ms;
 }
