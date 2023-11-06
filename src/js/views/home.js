@@ -1,7 +1,11 @@
 import React, { useEffect } from "react";
+
 import logo from '/workspaces/StarWars-React/src/img/logo.jpg'
 import personajes from '/workspaces/StarWars-React/src/img/personajes.png'
 import nave from '/workspaces/StarWars-React/src/img/nave.png'
+
+import ReactHowler from 'react-howler'
+import sound from '/workspaces/StarWars-React/src/assets/sound/starwras-guerra-de-las-galaxias-peliculas-.mp3'
 
 
 export const Home = () => {
@@ -28,6 +32,7 @@ export const Home = () => {
         <span className="carousel-control-next-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Next</span>
       </button>
+      <ReactHowler src={sound}/>
     </div>
   )
 }
